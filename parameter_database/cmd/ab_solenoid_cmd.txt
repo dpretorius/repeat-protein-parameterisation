@@ -1,0 +1,270 @@
+python rep_pam.py 1a4y pdb1a4y A 2 455 27 --Ca 2 29 53 81 111 139 196 225 253 282 310 339 396 423 367 168 --insert 
+python rep_pam.py 1a4y pdb1a4y D 2 455 27 --Ca 2 29 53 81 139 111 168 282 225 253 310 339 367 396 423 196 --insert 
+python rep_pam.py 1a9n pdb1a9n C 30 151 23 --Ca 30 53 75 99 124 --insert 
+python rep_pam.py 1d0b pdb1d0b A 78 230 20 --Ca 99 78 121 165 143 187 209 --insert 
+python rep_pam.py 1dfj pdb1dfj I 1 450 27 --Ca 26 1 51 165 195 222 108 249 279 307 80 138 421 393 336 364 --insert 319 320 321 322 323 324 325
+python rep_pam.py 1fqv pdb1fqv A 149 397 23 --Ca 149 243 219 174 296 323 269 348 373 194 --insert 
+python rep_pam.py 1fqv pdb1fqv C 149 397 23 --Ca 149 174 194 219 243 323 269 348 373 296 --insert 
+python rep_pam.py 1fqv pdb1fqv E 149 397 23 --Ca 149 194 174 296 269 243 323 348 373 219 --insert 
+python rep_pam.py 1fqv pdb1fqv G 149 397 23 --Ca 149 174 194 219 243 269 296 373 323 348 --insert 
+python rep_pam.py 1fqv pdb1fqv I 149 397 23 --Ca 149 174 243 219 269 323 296 348 373 194 --insert 
+python rep_pam.py 1fqv pdb1fqv K 149 397 23 --Ca 174 149 194 219 269 243 296 348 373 323 --insert 
+python rep_pam.py 1fqv pdb1fqv M 149 397 23 --Ca 149 194 219 243 269 296 323 174 373 348 --insert 
+python rep_pam.py 1fqv pdb1fqv O 149 397 23 --Ca 149 194 219 174 296 323 243 373 269 348 --insert 
+python rep_pam.py 1gwb pdb1gwb A 30 242 22 --Ca 30 51 75 144 120 97 168 192 214 --insert 
+python rep_pam.py 1gwb pdb1gwb B 30 242 22 --Ca 30 75 51 97 144 120 168 192 214 --insert 
+python rep_pam.py 1h6t pdb1h6t A 77 230 21 --Ca 77 121 143 165 187 209 99 --insert 
+python rep_pam.py 1h6u pdb1h6u A 77 255 21 --Ca 99 77 121 143 187 165 209 231 --insert 
+python rep_pam.py 1io0 pdb1io0 A 196 344 28 --Ca 196 225 253 281 311 --insert 296 297 298
+python rep_pam.py 1jl5 pdb1jl5 A 1072 1378 19 --Ca 1072 1112 1154 1132 1092 1196 1174 1216 1238 1258 1318 1338 1298 1358 1278 --insert 
+python rep_pam.py 1k5d pdb1k5d C 2 333 29 --Ca 2 32 60 94 122 157 187 216 303 244 273 --insert 151 152 153 154 155 156 157 158 159
+python rep_pam.py 1k5d pdb1k5d F 2 333 29 --Ca 2 32 60 158 187 94 216 274 244 303 122 --insert 151 152 153 154 155 156 157 158 159
+python rep_pam.py 1k5d pdb1k5d I 2 333 29 --Ca 2 122 60 32 187 158 216 244 274 94 303 --insert 151 152 153 154 155 156 157 158 159
+python rep_pam.py 1k5d pdb1k5d L 2 333 29 --Ca 60 2 122 94 32 187 244 303 158 274 216 --insert 151 152 153 154 155 156 157 158 159
+python rep_pam.py 1k5g pdb1k5g C 2 333 29 --Ca 2 32 94 60 122 216 158 244 274 303 187 --insert 151 152 153 154 155 156 157 158 159
+python rep_pam.py 1k5g pdb1k5g F 2 333 29 --Ca 2 94 122 60 158 187 216 244 274 32 303 --insert 151 152 153 154 155 156 157 158 159
+python rep_pam.py 1k5g pdb1k5g I 2 333 29 --Ca 2 32 60 94 187 216 158 244 303 274 122 --insert 151 152 153 154 155 156 157 158 159
+python rep_pam.py 1k5g pdb1k5g L 2 333 29 --Ca 2 32 60 158 122 187 216 244 274 303 94 --insert 151 152 153 154 155 156 157 158 159
+python rep_pam.py 1m0z pdb1m0z A 12 195 22 --Ca 12 32 124 56 100 148 172 78 --insert 48 49 50 51
+python rep_pam.py 1m0z pdb1m0z B 12 195 22 --Ca 12 32 78 56 100 124 148 172 --insert 48 49 50 51
+python rep_pam.py 1m10 pdb1m10 B 11 226 23 --Ca 11 32 56 78 100 148 124 172 196 --insert 48 49 50 51
+python rep_pam.py 1m9l pdb1m9l A 37 150 21 --Ca 37 62 106 128 84 --insert 
+python rep_pam.py 1m9s pdb1m9s A 78 231 21 --Ca 121 78 99 187 209 143 165 --insert 
+python rep_pam.py 1o6s pdb1o6s A 79 406 20 --Ca 79 102 121 143 165 187 208 274 296 230 252 318 340 362 384 --insert 
+python rep_pam.py 1o6t pdb1o6t A 79 406 20 --Ca 79 121 99 143 165 187 252 296 274 340 318 362 208 384 230 --insert 
+python rep_pam.py 1o6v pdb1o6v A 78 405 20 --Ca 78 99 121 143 165 208 230 251 274 296 318 362 187 383 340 --insert 
+python rep_pam.py 1o6v pdb1o6v B 78 405 20 --Ca 78 99 143 165 187 208 230 251 296 318 340 362 121 274 383 --insert 
+python rep_pam.py 1ogq pdb1ogq A 62 277 23 --Ca 89 62 113 160 136 185 207 231 254 --insert 
+python rep_pam.py 1ook pdb1ook G 11 225 22 --Ca 32 56 78 101 125 148 172 11 196 --insert 48 49 50 51
+python rep_pam.py 1otm pdb1otm A 89 242 21 --Ca 89 110 133 177 199 155 221 --insert 
+python rep_pam.py 1otn pdb1otn A 89 242 21 --Ca 89 155 177 221 199 110 133 --insert 
+python rep_pam.py 1oto pdb1oto A 89 242 21 --Ca 89 111 133 177 199 221 155 --insert 
+python rep_pam.py 1ozn pdb1ozn A 37 279 23 --Ca 37 82 106 154 131 179 203 58 227 250 --insert 
+python rep_pam.py 1p8t pdb1p8t A 33 279 23 --Ca 33 56 79 103 128 152 176 248 200 224 --insert 268 269 270 271 272 273 274 275 276 277 278 279
+python rep_pam.py 1p8v pdb1p8v A 12 229 23 --Ca 35 12 81 59 104 128 176 152 198 --insert 
+python rep_pam.py 1pgv pdb1pgv A 223 362 27 --Ca 223 275 246 331 303 --insert 
+python rep_pam.py 1qyy pdb1qyy A 13 228 23 --Ca 13 33 59 81 104 128 152 176 198 --insert 48 49 50 51 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226
+python rep_pam.py 1qyy pdb1qyy G 13 228 23 --Ca 13 35 59 81 128 104 152 176 198 --insert 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 48 49 50 51
+python rep_pam.py 1sq0 pdb1sq0 B 3 251 23 --Ca 3 33 57 79 102 126 197 227 174 150 --insert 48 49 50 51 210 211 212 213 214 215 216 217 218 219 220 221 222
+python rep_pam.py 1u0n pdb1u0n D 12 223 22 --Ca 12 33 57 102 79 198 150 174 126 --insert 
+python rep_pam.py 1w8a pdb1w8a A 553 697 23 --Ca 553 574 599 623 647 671 --insert 682 683 684 685 686 687 688 689 690 691 692 693 694 695 590 591 592
+python rep_pam.py 1xcd pdb1xcd A 33 316 22 --Ca 76 53 100 33 122 146 171 192 240 263 290 216 --insert 
+python rep_pam.py 1xec pdb1xec A 33 316 22 --Ca 33 53 76 100 171 122 146 192 263 216 290 240 --insert 
+python rep_pam.py 1xec pdb1xec B 33 316 22 --Ca 33 53 100 122 146 171 192 76 263 216 290 240 --insert 
+python rep_pam.py 1xeu pdb1xeu A 65 216 20 --Ca 65 132 110 153 175 197 88 --insert 
+python rep_pam.py 1xku pdb1xku A 34 320 22 --Ca 53 34 77 100 121 145 216 240 171 263 292 192 --insert 
+python rep_pam.py 1xwd pdb1xwd C 27 241 22 --Ca 47 27 73 98 173 195 219 123 143 --insert 
+python rep_pam.py 1z7x pdb1z7x W 2 455 27 --Ca 55 2 82 112 169 139 197 29 284 253 340 310 367 398 425 226 --insert 
+python rep_pam.py 1z7x pdb1z7x Y 2 455 27 --Ca 2 29 55 139 82 112 169 197 226 253 284 310 367 340 398 425 --insert 
+python rep_pam.py 1ziw pdb1ziw A 34 658 24 --Ca 52 34 76 100 123 197 147 222 248 275 298 171 322 407 432 380 457 507 481 531 562 636 610 355 587 --insert 
+python rep_pam.py 2a0z pdb2a0z A 34 665 24 --Ca 34 55 79 103 127 175 197 252 278 222 302 151 359 383 411 435 460 484 326 566 590 510 614 639 534 --insert 
+python rep_pam.py 2bex pdb2bex A 6 455 27 --Ca 6 31 88 145 59 173 202 230 259 287 116 373 401 344 430 316 --insert 
+python rep_pam.py 2bex pdb2bex B 6 455 27 --Ca 6 31 59 88 116 202 230 145 259 287 316 344 401 430 373 173 --insert 
+python rep_pam.py 2bnh pdb2bnh A 1 451 27 --Ca 1 55 27 84 112 141 169 198 226 255 283 312 397 369 426 340 --insert 
+python rep_pam.py 2ca6 pdb2ca6 A 2 335 29 --Ca 2 98 126 36 163 220 191 248 64 278 307 --insert 
+python rep_pam.py 2ca6 pdb2ca6 B 2 335 29 --Ca 2 64 98 191 126 163 220 36 248 278 307 --insert 
+python rep_pam.py 2ft3 pdb2ft3 A 37 321 22 --Ca 37 82 106 58 176 197 127 221 245 268 151 298 --insert 
+python rep_pam.py 2ft3 pdb2ft3 B 37 321 22 --Ca 37 58 82 151 106 176 221 197 127 245 268 297 --insert 
+python rep_pam.py 2ft3 pdb2ft3 C 37 321 22 --Ca 58 82 151 176 127 106 221 268 197 298 245 37 --insert 
+python rep_pam.py 2ft3 pdb2ft3 D 37 321 22 --Ca 37 58 82 106 127 176 151 197 268 245 221 298 --insert 
+python rep_pam.py 2ft3 pdb2ft3 E 37 321 22 --Ca 37 58 82 106 127 151 221 176 245 268 297 197 --insert 
+python rep_pam.py 2ft3 pdb2ft3 F 37 321 22 --Ca 37 58 106 127 82 151 176 221 245 197 268 298 --insert 
+python rep_pam.py 2id5 pdb2id5 A 15 348 22 --Ca 15 36 108 84 60 132 156 180 227 204 252 276 300 324 --insert 
+python rep_pam.py 2id5 pdb2id5 B 14 346 22 --Ca 14 36 60 132 156 180 204 227 252 84 108 324 276 300 --insert 
+python rep_pam.py 2id5 pdb2id5 C 15 348 22 --Ca 15 36 59 108 132 156 180 84 227 204 324 300 276 252 --insert 
+python rep_pam.py 2id5 pdb2id5 D 15 349 22 --Ca 15 61 84 108 156 180 132 204 227 276 252 300 324 37 --insert 
+python rep_pam.py 2ifg pdb2ifg A 47 169 23 --Ca 47 69 119 94 142 --insert 
+python rep_pam.py 2ifg pdb2ifg B 47 169 23 --Ca 47 69 94 119 142 --insert 
+python rep_pam.py 2je0 pdb2je0 A 21 143 23 --Ca 92 21 68 117 46 --insert 
+python rep_pam.py 2je0 pdb2je0 B 21 143 23 --Ca 21 46 92 117 68 --insert 
+python rep_pam.py 2je0 pdb2je0 C 21 142 23 --Ca 21 46 68 92 117 --insert 
+python rep_pam.py 2je0 pdb2je0 D 21 143 23 --Ca 21 117 92 68 46 --insert 
+python rep_pam.py 2je0 pdb2je0 E 21 143 23 --Ca 68 46 92 117 21 --insert 
+python rep_pam.py 2je0 pdb2je0 F 21 142 23 --Ca 21 46 117 68 92 --insert 
+python rep_pam.py 2je1 pdb2je1 A 21 143 23 --Ca 21 117 92 46 68 --insert 
+python rep_pam.py 2je1 pdb2je1 B 21 143 23 --Ca 46 68 92 117 21 --insert 
+python rep_pam.py 2je1 pdb2je1 C 21 143 23 --Ca 68 21 46 92 117 --insert 
+python rep_pam.py 2je1 pdb2je1 D 21 143 23 --Ca 21 46 68 92 117 --insert 
+python rep_pam.py 2jqd pdb2jqd A 21 143 23 --Ca 21 46 117 92 68 --insert 
+python rep_pam.py 2o6q pdb2o6q A 42 260 23 --Ca 42 63 159 87 135 183 207 231 111 --insert 
+python rep_pam.py 2o6r pdb2o6r A 37 150 21 --Ca 37 54 127 78 103 --insert 
+python rep_pam.py 2o6s pdb2o6s A 34 203 23 --Ca 55 34 103 79 151 127 175 --insert 
+python rep_pam.py 2o6s pdb2o6s B 34 203 23 --Ca 79 103 55 127 151 175 34 --insert 
+python rep_pam.py 2omt pdb2omt A 80 408 20 --Ca 80 101 123 189 168 145 212 233 256 277 299 366 321 343 387 --insert 
+python rep_pam.py 2omu pdb2omu A 80 408 20 --Ca 123 101 80 167 212 189 233 255 277 299 145 321 343 365 387 --insert 
+python rep_pam.py 2omv pdb2omv A 80 408 20 --Ca 80 101 145 123 190 211 167 232 276 255 298 320 386 342 364 --insert 
+python rep_pam.py 2omw pdb2omw A 80 407 20 --Ca 80 101 123 145 167 232 189 255 298 276 320 211 342 387 364 --insert 
+python rep_pam.py 2omx pdb2omx A 80 409 21 --Ca 124 145 80 102 167 212 233 255 321 189 299 277 343 365 387 --insert 
+python rep_pam.py 2omy pdb2omy A 49 407 20 --Ca 49 64 80 101 123 145 190 211 232 255 276 167 298 386 342 320 365 --insert 
+python rep_pam.py 2omz pdb2omz A 79 407 20 --Ca 79 101 124 145 167 189 254 276 210 232 298 320 342 364 386 --insert 
+python rep_pam.py 2q4g pdb2q4g W 2 455 27 --Ca 2 116 88 59 31 173 145 202 230 287 316 401 259 373 344 430 --insert 
+python rep_pam.py 2q4g pdb2q4g Y 2 455 27 --Ca 31 2 59 88 202 173 116 230 259 287 344 316 145 430 401 373 --insert 
+python rep_pam.py 2r9u pdb2r9u A 32 153 23 --Ca 32 53 77 101 125 --insert 
+python rep_pam.py 2r9u pdb2r9u B 32 153 23 --Ca 32 53 101 125 77 --insert 
+python rep_pam.py 2r9u pdb2r9u C 32 153 23 --Ca 32 101 77 125 53 --insert 
+python rep_pam.py 2r9u pdb2r9u D 32 153 23 --Ca 32 125 77 101 53 --insert 
+python rep_pam.py 2uzx pdb2uzx A 80 234 21 --Ca 80 102 146 124 168 190 212 --insert 
+python rep_pam.py 2uzx pdb2uzx C 80 233 21 --Ca 102 80 146 124 168 190 212 --insert 
+python rep_pam.py 2uzy pdb2uzy A 80 231 20 --Ca 80 102 146 168 190 212 124 --insert 
+python rep_pam.py 2uzy pdb2uzy C 80 231 20 --Ca 80 102 124 146 168 190 212 --insert 
+python rep_pam.py 2v70 pdb2v70 B 516 685 23 --Ca 516 586 537 562 610 634 658 --insert 
+python rep_pam.py 2v70 pdb2v70 C 516 685 23 --Ca 516 562 586 610 537 634 658 --insert 
+python rep_pam.py 2v70 pdb2v70 D 516 685 23 --Ca 516 537 562 610 586 634 658 --insert 
+python rep_pam.py 2v9s pdb2v9s A 283 450 23 --Ca 283 304 328 352 400 376 424 --insert 
+python rep_pam.py 2v9s pdb2v9s B 283 450 23 --Ca 283 328 304 376 352 400 424 --insert 
+python rep_pam.py 2v9s pdb2v9s C 283 450 23 --Ca 283 352 304 328 424 400 376 --insert 
+python rep_pam.py 2v9s pdb2v9s D 283 450 23 --Ca 283 304 328 424 376 352 400 --insert 
+python rep_pam.py 2v9t pdb2v9t B 283 450 23 --Ca 304 283 328 352 376 400 424 --insert 
+python rep_pam.py 2wqu pdb2wqu A 56 232 21 --Ca 56 79 101 124 189 212 167 145 --insert 
+python rep_pam.py 2wqu pdb2wqu B 80 233 21 --Ca 80 102 124 146 190 212 168 --insert 
+python rep_pam.py 2wqu pdb2wqu C 80 233 21 --Ca 80 102 168 146 190 212 124 --insert 
+python rep_pam.py 2wqu pdb2wqu D 80 233 21 --Ca 124 102 146 168 190 212 80 --insert 
+python rep_pam.py 2wqu pdb2wqu E 80 233 21 --Ca 80 102 168 124 146 212 190 --insert 
+python rep_pam.py 2wqv pdb2wqv A 80 233 21 --Ca 80 102 146 168 190 212 124 --insert 
+python rep_pam.py 2wqv pdb2wqv B 80 232 20 --Ca 124 146 80 167 189 211 101 --insert 
+python rep_pam.py 2wqw pdb2wqw A 80 233 21 --Ca 80 102 124 146 190 212 168 --insert 
+python rep_pam.py 2wqw pdb2wqw B 80 233 21 --Ca 80 102 124 146 168 190 212 --insert 
+python rep_pam.py 2wqx pdb2wqx A 80 233 21 --Ca 80 124 168 102 212 190 146 --insert 
+python rep_pam.py 2wqx pdb2wqx B 80 233 21 --Ca 80 102 146 168 124 212 190 --insert 
+python rep_pam.py 2xwt pdb2xwt C 34 248 22 --Ca 34 54 104 78 129 152 227 178 201 --insert 
+python rep_pam.py 2y5q pdb2y5q A 80 233 21 --Ca 124 102 146 168 190 212 80 --insert 
+python rep_pam.py 2z62 pdb2z62 A 37 282 23 --Ca 37 58 82 106 130 154 179 206 228 254 --insert 
+python rep_pam.py 2z63 pdb2z63 A 37 576 23 --Ca 37 82 58 130 154 106 179 207 226 253 283 312 355 333 377 403 426 451 475 524 548 500 --insert 
+python rep_pam.py 2z64 pdb2z64 A 36 597 23 --Ca 36 57 81 105 129 178 153 206 251 310 282 353 331 401 375 424 473 449 498 522 546 570 225 --insert 
+python rep_pam.py 2z7x pdb2z7x A 34 575 23 --Ca 34 104 128 56 153 175 199 224 281 311 252 364 340 391 417 80 440 481 527 503 556 461 --insert 
+python rep_pam.py 2z7x pdb2z7x B 27 520 23 --Ca 73 97 49 117 143 164 189 215 248 275 329 301 352 427 402 449 472 496 376 27 --insert 
+python rep_pam.py 2z80 pdb2z80 A 29 333 24 --Ca 56 80 128 104 153 175 199 29 253 281 224 305 --insert 
+python rep_pam.py 2z80 pdb2z80 B 29 333 24 --Ca 29 56 80 104 128 153 175 281 199 253 305 224 --insert 
+python rep_pam.py 2z81 pdb2z81 A 34 555 23 --Ca 34 80 56 104 128 226 199 153 281 253 311 340 175 364 461 391 417 481 503 527 440 --insert 
+python rep_pam.py 2z82 pdb2z82 A 34 555 23 --Ca 34 56 80 128 104 175 153 199 226 253 311 281 340 417 391 364 440 461 481 503 527 --insert 
+python rep_pam.py 3a79 pdb3a79 A 35 554 23 --Ca 80 35 56 104 128 153 175 199 311 253 281 226 364 340 391 417 440 503 481 527 461 --insert 
+python rep_pam.py 3a79 pdb3a79 B 35 529 23 --Ca 35 56 80 104 150 171 196 125 220 251 278 334 357 306 407 381 454 432 476 500 --insert 
+python rep_pam.py 3a7b pdb3a7b A 34 555 23 --Ca 34 56 104 80 128 175 199 224 281 153 253 311 391 340 364 440 417 481 461 503 527 --insert 
+python rep_pam.py 3a7c pdb3a7c A 34 555 23 --Ca 34 56 80 104 153 128 199 175 224 253 281 311 340 391 417 481 503 440 527 461 364 --insert 
+python rep_pam.py 3bz5 pdb3bz5 A 97 411 20 --Ca 97 161 139 203 225 246 182 266 119 330 352 309 372 394 288 --insert 
+python rep_pam.py 3cig pdb3cig A 34 666 24 --Ca 34 102 54 78 127 150 174 198 225 251 301 277 326 358 383 410 435 509 484 533 565 459 589 613 638 --insert 
+python rep_pam.py 3ciy pdb3ciy A 31 666 24 --Ca 54 78 31 127 102 174 200 251 150 277 301 326 358 383 225 460 483 509 533 565 410 589 435 613 638 --insert 
+python rep_pam.py 3ciy pdb3ciy B 31 667 24 --Ca 31 54 78 102 174 127 200 225 251 301 277 358 383 410 435 326 460 509 533 565 589 613 483 150 638 --insert 
+python rep_pam.py 3fxi pdb3fxi A 40 624 23 --Ca 40 130 81 154 178 206 227 106 254 57 355 286 333 376 402 426 451 475 311 573 499 547 602 524 --insert 
+python rep_pam.py 3g04 pdb3g04 C 36 249 22 --Ca 36 54 79 103 128 227 201 152 179 --insert 
+python rep_pam.py 3kj4 pdb3kj4 D 40 281 23 --Ca 60 40 85 109 134 158 182 230 254 206 --insert 
+python rep_pam.py 3o6n pdb3o6n A 180 502 22 --Ca 180 254 230 278 302 322 341 363 205 432 454 384 475 409 --insert 
+python rep_pam.py 3rg1 pdb3rg1 A 36 617 23 --Ca 57 81 36 105 129 153 177 203 278 226 302 249 325 349 374 400 424 449 524 500 571 547 599 473 --insert 
+python rep_pam.py 3rg1 pdb3rg1 B 36 598 23 --Ca 36 57 81 177 153 105 203 226 250 302 278 129 349 374 400 424 449 473 500 524 325 548 571 --insert 
+python rep_pam.py 3rg1 pdb3rg1 E 36 598 23 --Ca 81 57 105 36 129 153 177 203 278 249 226 302 349 325 374 400 424 473 500 449 524 548 571 --insert 
+python rep_pam.py 3rg1 pdb3rg1 F 36 598 23 --Ca 36 57 129 81 177 105 203 226 250 153 349 374 400 424 449 473 500 524 548 325 302 278 571 --insert 
+python rep_pam.py 3rg1 pdb3rg1 I 33 369 23 --Ca 33 53 79 149 125 173 200 220 246 300 318 275 345 101 --insert 
+python rep_pam.py 3rg1 pdb3rg1 J 36 598 23 --Ca 36 105 153 129 177 203 226 278 250 302 325 349 374 400 57 449 473 500 524 424 81 548 571 --insert 
+python rep_pam.py 3rg1 pdb3rg1 M 39 617 23 --Ca 39 57 80 105 129 152 177 200 282 253 301 325 349 374 400 424 448 472 524 499 547 575 599 230 --insert 
+python rep_pam.py 3riz pdb3riz A 29 743 22 --Ca 74 101 47 150 124 175 224 202 29 271 293 318 247 342 367 392 442 466 418 490 514 538 562 587 656 607 704 635 728 680 --insert 61 62 63 64 65 66 67 68 69 70 71 72 73
+python rep_pam.py 3tsr pdb3tsr E 1 449 27 --Ca 1 26 53 110 81 138 167 195 224 252 281 309 366 338 395 423 --insert 
+python rep_pam.py 3tsr pdb3tsr F 1 449 27 --Ca 1 26 53 110 81 138 224 252 309 281 338 366 395 423 167 195 --insert 
+python rep_pam.py 3tsr pdb3tsr G 1 449 27 --Ca 26 53 108 138 167 81 252 222 195 1 336 309 281 423 367 393 --insert 
+python rep_pam.py 3tsr pdb3tsr H 1 449 27 --Ca 1 26 53 81 108 138 167 252 222 281 309 336 367 393 195 424 --insert 
+python rep_pam.py 3twi pdb3twi D 32 153 23 --Ca 32 53 77 125 101 --insert 
+python rep_pam.py 3twi pdb3twi E 32 153 23 --Ca 32 53 77 125 101 --insert 
+python rep_pam.py 3ul9 pdb3ul9 A 37 282 23 --Ca 37 58 82 130 106 154 207 179 230 254 --insert 
+python rep_pam.py 3ulu pdb3ulu A 37 667 24 --Ca 37 54 102 150 174 126 198 225 251 277 301 358 326 410 383 435 459 484 509 565 589 533 613 638 79 --insert 
+python rep_pam.py 3ulv pdb3ulv A 31 667 24 --Ca 54 31 78 102 150 126 173 198 250 229 277 383 358 410 301 459 434 483 509 326 565 533 613 638 589 --insert 
+python rep_pam.py 3vq1 pdb3vq1 B 34 597 23 --Ca 81 57 105 129 153 178 256 229 206 286 332 310 353 375 34 473 449 522 498 401 546 570 424 --insert 
+python rep_pam.py 3vq2 pdb3vq2 A 35 596 23 --Ca 81 57 105 129 153 178 206 256 35 286 310 332 353 375 229 449 473 498 522 546 570 424 401 --insert 
+python rep_pam.py 3vq2 pdb3vq2 B 35 597 23 --Ca 35 57 81 105 129 153 178 206 229 256 286 310 332 353 375 401 424 449 498 473 522 546 570 --insert 
+python rep_pam.py 3zyi pdb3zyi A 58 319 22 --Ca 58 78 103 127 151 246 222 200 270 294 175 --insert 
+python rep_pam.py 3zyj pdb3zyj A 59 320 22 --Ca 59 79 104 128 201 176 223 152 271 247 295 --insert 
+python rep_pam.py 3zyj pdb3zyj C 59 321 22 --Ca 59 128 104 152 176 201 247 223 79 271 295 --insert 
+python rep_pam.py 3zyn pdb3zyn A 74 361 23 --Ca 74 116 140 163 187 213 234 91 336 307 259 283 --insert 
+python rep_pam.py 3zyn pdb3zyn B 74 331 22 --Ca 74 91 140 163 187 115 213 234 258 283 307 --insert 
+python rep_pam.py 3zyo pdb3zyo A 71 334 23 --Ca 71 91 116 140 164 187 213 283 307 235 259 --insert 
+python rep_pam.py 4aw4 pdb4aw4 A 79 254 21 --Ca 101 123 146 168 189 79 211 233 --insert 
+python rep_pam.py 4aw4 pdb4aw4 B 80 255 21 --Ca 80 101 124 145 167 189 234 211 --insert 
+python rep_pam.py 4aw4 pdb4aw4 C 80 255 21 --Ca 80 101 124 145 167 234 189 211 --insert 
+python rep_pam.py 4ay9 pdb4ay9 Y 28 265 22 --Ca 28 74 49 99 124 147 173 242 201 221 --insert 
+python rep_pam.py 4ay9 pdb4ay9 Z 29 265 22 --Ca 29 73 98 123 49 147 173 220 195 243 --insert 
+python rep_pam.py 4bsr pdb4bsr A 47 468 22 --Ca 47 66 141 165 117 93 189 213 237 260 284 308 377 331 355 401 425 446 --insert 
+python rep_pam.py 4bsr pdb4bsr B 48 468 22 --Ca 48 117 141 66 213 165 189 260 237 93 355 331 284 401 425 377 446 308 --insert 
+python rep_pam.py 4bss pdb4bss A 48 469 22 --Ca 48 68 94 142 166 118 190 214 238 261 309 285 331 378 426 446 402 356 --insert 
+python rep_pam.py 4bss pdb4bss B 48 468 22 --Ca 48 68 93 117 141 165 189 237 213 284 260 308 331 355 377 446 401 425 --insert 
+python rep_pam.py 4bss pdb4bss E 52 468 22 --Ca 52 68 117 141 93 165 189 213 237 331 260 308 284 355 377 401 425 446 --insert 
+python rep_pam.py 4bss pdb4bss F 48 483 21 --Ca 48 68 93 118 142 190 166 238 214 261 309 285 331 378 356 426 402 446 470 --insert 
+python rep_pam.py 4bst pdb4bst A 48 468 22 --Ca 48 68 117 165 141 189 237 213 93 284 308 355 331 377 401 425 446 260 --insert 
+python rep_pam.py 4bsu pdb4bsu A 47 469 22 --Ca 47 74 118 94 142 190 166 214 238 261 285 332 309 378 426 446 356 402 --insert 
+python rep_pam.py 4bsu pdb4bsu B 47 484 22 --Ca 47 68 93 117 189 213 237 260 284 308 355 141 377 401 425 446 469 165 331 --insert 
+python rep_pam.py 4bsu pdb4bsu E 47 483 22 --Ca 94 74 118 142 166 214 190 47 309 238 285 356 332 378 402 426 261 446 470 --insert 
+python rep_pam.py 4bsu pdb4bsu F 47 469 22 --Ca 47 68 118 142 166 190 94 238 214 285 309 332 356 402 378 261 426 446 --insert 
+python rep_pam.py 4bv4 pdb4bv4 R 74 446 23 --Ca 74 129 101 154 201 178 273 297 249 323 346 370 394 418 225 --insert 
+python rep_pam.py 4ezg pdb4ezg A 75 212 22 --Ca 75 120 143 167 190 97 --insert 
+python rep_pam.py 4ezg pdb4ezg B 75 212 22 --Ca 75 98 120 190 143 167 --insert 
+python rep_pam.py 4fd0 pdb4fd0 A 150 383 22 --Ca 150 173 194 240 218 313 264 337 361 287 --insert 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336
+python rep_pam.py 4fdw pdb4fdw A 147 404 22 --Ca 147 169 191 214 237 260 284 334 307 359 381 --insert 
+python rep_pam.py 4fho pdb4fho A 41 255 20 --Ca 41 56 80 102 124 145 167 189 212 234 --insert 
+python rep_pam.py 4fho pdb4fho B 80 255 21 --Ca 80 102 124 168 146 190 212 234 --insert 
+python rep_pam.py 4fmz pdb4fmz A 80 369 21 --Ca 80 102 124 146 169 192 213 236 257 347 323 279 301 --insert 
+python rep_pam.py 4fmz pdb4fmz B 80 369 21 --Ca 125 80 146 169 192 213 236 279 301 323 347 257 102 --insert 
+python rep_pam.py 4fs7 pdb4fs7 A 90 408 21 --Ca 90 118 140 162 186 232 253 277 300 320 343 389 208 367 --insert 
+python rep_pam.py 4kng pdb4kng A 32 464 23 --Ca 32 65 137 113 89 161 185 209 233 256 280 327 304 351 373 397 421 443 --insert 
+python rep_pam.py 4kng pdb4kng B 32 465 23 --Ca 32 65 113 89 137 161 185 209 233 304 327 280 351 256 373 397 421 443 --insert 
+python rep_pam.py 4l3f pdb4l3f A 55 219 22 --Ca 55 104 127 82 150 197 174 --insert 
+python rep_pam.py 4l3f pdb4l3f C 82 219 22 --Ca 82 126 104 150 197 174 --insert 
+python rep_pam.py 4l3f pdb4l3f D 82 218 21 --Ca 82 104 127 150 174 197 --insert 
+python rep_pam.py 4m7e pdb4m7e A 74 270 23 --Ca 74 100 174 201 223 246 124 149 --insert 
+python rep_pam.py 4r58 pdb4r58 A 44 219 21 --Ca 44 66 88 154 176 198 110 132 --insert 
+python rep_pam.py 4r58 pdb4r58 B 44 219 21 --Ca 44 88 110 66 154 176 132 198 --insert 
+python rep_pam.py 4r58 pdb4r58 C 44 219 21 --Ca 44 66 88 132 176 198 154 110 --insert 
+python rep_pam.py 4r58 pdb4r58 D 44 219 21 --Ca 44 66 110 132 154 176 198 88 --insert 
+python rep_pam.py 4r5c pdb4r5c A 44 294 21 --Ca 44 66 88 111 135 159 229 207 252 273 183 --insert 
+python rep_pam.py 4r5d pdb4r5d A 44 430 24 --Ca 44 66 87 112 136 160 184 232 208 289 317 346 374 403 260 --insert 
+python rep_pam.py 4rcw pdb4rcw A 379 550 23 --Ca 379 403 427 451 475 523 498 --insert 
+python rep_pam.py 4tzh pdb4tzh A 45 209 22 --Ca 45 69 91 114 138 160 184 --insert 
+python rep_pam.py 4tzh pdb4tzh B 46 209 22 --Ca 46 69 92 114 161 184 138 --insert 
+python rep_pam.py 4u06 pdb4u06 A 48 369 22 --Ca 71 91 117 48 137 163 183 209 255 229 275 301 321 344 --insert 
+python rep_pam.py 4u08 pdb4u08 A 37 425 21 --Ca 37 51 74 97 120 143 189 166 212 235 258 281 304 327 396 373 350 --insert 
+python rep_pam.py 4u08 pdb4u08 B 51 418 22 --Ca 51 117 71 97 143 163 189 209 235 301 281 255 327 373 347 393 --insert 
+python rep_pam.py 4u09 pdb4u09 A 44 417 22 --Ca 44 113 68 90 160 136 182 205 229 297 321 274 367 389 343 251 --insert 
+python rep_pam.py 4u09 pdb4u09 B 28 413 21 --Ca 28 43 89 66 112 135 158 204 181 227 250 273 319 296 388 365 342 --insert 
+python rep_pam.py 4u7l pdb4u7l A 32 422 23 --Ca 56 32 103 79 127 152 175 199 223 247 295 271 319 346 370 394 --insert 
+python rep_pam.py 4ufr pdb4ufr A 48 468 22 --Ca 117 66 141 165 189 213 93 237 48 260 284 331 355 377 401 425 308 446 --insert 
+python rep_pam.py 4ufr pdb4ufr C 48 468 22 --Ca 48 69 93 117 141 165 213 189 260 237 284 308 331 355 377 425 401 446 --insert 
+python rep_pam.py 4ufs pdb4ufs A 48 468 22 --Ca 48 68 165 141 189 213 260 237 284 331 308 355 377 401 425 446 93 117 --insert 
+python rep_pam.py 4v2c pdb4v2c A 45 326 22 --Ca 45 87 63 133 109 204 158 251 229 275 180 300 --insert 
+python rep_pam.py 4v2c pdb4v2c C 45 326 22 --Ca 45 63 87 133 158 180 204 229 251 300 109 275 --insert 
+python rep_pam.py 4v2d pdb4v2d A 45 326 22 --Ca 45 63 87 109 158 180 204 251 229 275 300 133 --insert 
+python rep_pam.py 4v2e pdb4v2e A 39 321 22 --Ca 58 39 82 105 128 153 224 199 246 270 295 175 --insert 
+python rep_pam.py 4v2e pdb4v2e B 40 321 22 --Ca 58 40 82 105 128 153 175 224 246 199 295 270 --insert 
+python rep_pam.py 4xa9 pdb4xa9 A 14 239 29 --Ca 14 68 116 163 211 --insert 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67
+python rep_pam.py 4xa9 pdb4xa9 B 17 232 23 --Ca 66 90 114 17 138 161 185 38 209 --insert 
+python rep_pam.py 4xa9 pdb4xa9 D 17 232 23 --Ca 17 42 66 90 114 138 185 209 161 --insert 
+python rep_pam.py 4xa9 pdb4xa9 E 17 232 23 --Ca 17 38 90 114 138 161 185 209 66 --insert 
+python rep_pam.py 4xa9 pdb4xa9 G 14 232 23 --Ca 14 68 44 92 116 139 160 184 211 --insert 
+python rep_pam.py 4xa9 pdb4xa9 H 14 239 29 --Ca 14 68 116 211 163 --insert 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210
+python rep_pam.py 4xgo pdb4xgo A 45 338 21 --Ca 45 69 141 117 162 181 202 224 248 271 315 294 93 --insert 
+python rep_pam.py 4xgo pdb4xgo B 47 343 21 --Ca 71 95 143 164 119 183 47 204 296 250 273 317 226 --insert 
+python rep_pam.py 4xos pdb4xos A 21 142 23 --Ca 45 67 91 116 21 --insert 
+python rep_pam.py 4xos pdb4xos B 21 142 23 --Ca 21 45 67 91 116 --insert 
+python rep_pam.py 4yeb pdb4yeb B 44 328 22 --Ca 86 44 108 62 158 179 132 229 251 275 299 203 --insert 
+python rep_pam.py 4z0c pdb4z0c A 86 751 23 --Ca 86 107 131 155 202 178 228 251 274 298 321 351 374 399 472 448 496 520 544 597 568 424 647 675 699 723 623 --insert 
+python rep_pam.py 4z0c pdb4z0c D 86 751 23 --Ca 86 107 155 130 178 228 202 251 274 298 321 351 374 399 424 520 496 544 597 568 623 647 699 675 723 472 448 --insert 
+python rep_pam.py 4z61 pdb4z61 C 74 192 22 --Ca 74 98 170 122 146 --insert 
+python rep_pam.py 4z61 pdb4z61 D 74 192 22 --Ca 74 98 122 146 170 --insert 
+python rep_pam.py 4z64 pdb4z64 C 71 205 21 --Ca 71 95 119 143 167 190 --insert 
+python rep_pam.py 4z79 pdb4z79 A 315 451 26 --Ca 315 337 366 394 422 --insert 
+python rep_pam.py 4z8g pdb4z8g A 177 474 26 --Ca 177 202 365 393 421 452 --insert 
+python rep_pam.py 5a5c pdb5a5c C 13 329 23 --Ca 13 58 82 106 130 154 178 34 274 250 202 302 226 --insert 
+python rep_pam.py 5a5c pdb5a5c D 13 329 23 --Ca 13 34 58 82 106 202 178 130 226 250 274 302 154 --insert 
+python rep_pam.py 5cmn pdb5cmn C 44 324 22 --Ca 44 61 86 131 157 107 178 274 228 250 202 298 --insert 
+python rep_pam.py 5cmn pdb5cmn D 44 324 22 --Ca 44 61 86 107 157 178 202 228 250 274 131 298 --insert 
+python rep_pam.py 5cmp pdb5cmp A 44 327 22 --Ca 44 62 87 108 158 132 179 203 229 251 299 275 --insert 
+python rep_pam.py 5cmp pdb5cmp B 44 324 22 --Ca 44 62 87 132 108 158 179 229 251 203 299 275 --insert 
+python rep_pam.py 5cmp pdb5cmp C 44 327 22 --Ca 62 87 108 158 132 179 203 229 251 275 299 44 --insert 
+python rep_pam.py 5cmp pdb5cmp D 44 327 22 --Ca 62 87 108 158 132 179 44 203 229 275 251 299 --insert 
+python rep_pam.py 5ijb pdb5ijb A 36 598 23 --Ca 57 36 81 105 129 178 153 206 229 256 287 310 332 353 401 375 424 449 473 498 546 570 522 --insert 
+python rep_pam.py 5ijb pdb5ijb B 36 598 23 --Ca 105 81 129 153 178 206 229 36 310 286 332 353 401 375 424 473 449 498 57 256 522 546 570 --insert 
+python rep_pam.py 5ijc pdb5ijc A 36 597 23 --Ca 36 57 81 129 153 178 206 256 105 229 310 286 353 401 375 424 449 473 332 570 546 498 522 --insert 
+python rep_pam.py 5ijc pdb5ijc B 36 598 23 --Ca 36 57 81 105 129 153 207 256 229 288 310 332 178 424 401 353 449 473 498 522 546 570 375 --insert 
+python rep_pam.py 5ijd pdb5ijd A 36 598 23 --Ca 81 57 105 129 153 178 207 36 229 310 332 256 375 353 401 424 286 522 498 449 546 570 473 --insert 
+python rep_pam.py 5ijd pdb5ijd B 36 598 23 --Ca 36 57 81 129 153 178 105 229 207 256 288 310 353 401 332 375 424 449 473 498 522 546 570 --insert 
+python rep_pam.py 5il7 pdb5il7 B 41 435 22 --Ca 41 67 89 111 155 133 243 177 221 265 287 309 331 375 407 353 199 --insert 397 398 399 400 401 402 403 404 405 406
+python rep_pam.py 5ixq pdb5ixq A 67 571 23 --Ca 91 67 116 141 165 189 214 262 286 309 333 357 381 238 453 405 477 525 501 549 429 --insert 
+python rep_pam.py 5ixt pdb5ixt A 67 571 23 --Ca 91 67 116 141 165 214 238 189 262 286 309 333 357 405 453 429 381 477 525 501 549 --insert 
+python rep_pam.py 5iyx pdb5iyx A 67 616 22 --Ca 67 91 116 141 165 214 238 262 286 309 333 381 189 429 453 477 501 525 549 405 573 596 357 --insert 
+python rep_pam.py 5iyx pdb5iyx C 71 189 22 --Ca 95 71 119 143 167 --insert 
+python rep_pam.py 6jbu pdb6jbu B 29 321 23 --Ca 57 82 29 153 128 104 224 175 270 295 199 246 --insert 
