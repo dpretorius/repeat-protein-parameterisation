@@ -1,4 +1,5 @@
 import numpy as np
+from csv import writer
 
 def find_unit_vector_between_two_points(starting_point, terminal_point):
     direction_vector = terminal_point - starting_point
@@ -36,3 +37,11 @@ def angle_between(v1, v2):
     dot_pr = np.dot(v1, v2)
     norms = np.linalg.norm(v1) * np.linalg.norm(v2)
     return np.arccos(dot_pr / norms)
+
+def append_list_as_row(file_name, list_of_elem):
+    # Open file in append mode
+    with open(file_name, 'a+', newline='') as write_obj:
+        # Create a writer object from csv module
+        csv_writer = writer(write_obj)
+        # Add contents of list as last row in the csv file
+        csv_writer.writerow(list_of_elem)

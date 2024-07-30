@@ -1,13 +1,43 @@
 import argparse
 import os
 import numpy as np
+from csv import writer
 from scipy.optimize import minimize
-from pdb_processing import read_and_clean_coord, get_ca_coord,find_repeat_centroids, find_Ca_for_second_helix
-from helix_fitting import inital_axis_direction, preprocess_data, C, est_rad, find_minimal_perpendicular_vector, constraint_1, constraint_2, cost_function, find_minimal_perpendicular_vector_edit_tobe_general, translate_to_origin, rotate_to_z, rotMat, flatten_coordinates, displacement_along_axis, finding_angles, quadratic_loss_function, helix_reconstruction, constraint_1_new, constraint_2_new, cost_function_2, unpacking_variables, rise_per_repeat, total_twist 
-from secondaryhelix_fitting import finding_t_arr, helix_reconstruct_2, frenent_frame, estimate_radius_alpha, helix_3, cost_function_3, estimate_phase
-from utils import angle_between
+from pdb_processing import read_and_clean_coord, get_ca_coord, find_repeat_centroids, find_Ca_for_second_helix
+from helix_fitting import (
+    inital_axis_direction, preprocess_data, C, est_rad,
+    find_minimal_perpendicular_vector, constraint_1, constraint_2, cost_function,
+    find_minimal_perpendicular_vector_edit_tobe_general, translate_to_origin, rotate_to_z,
+    rotMat, flatten_coordinates, displacement_along_axis, finding_angles,
+    quadratic_loss_function, helix_reconstruction, constraint_1_new,
+    constraint_2_new, cost_function_2, unpacking_variables, rise_per_repeat, total_twist
+)
+from secondaryhelix_fitting import (
+    finding_t_arr, helix_reconstruct_2, frenent_frame, estimate_radius_alpha,
+    helix_3, cost_function_3, estimate_phase
+)
 from plotting import plot_helix
 
+from uncertaninty import (
+    gradient_function, calculate_uncertainties_from_grad, numerical_jacobian,
+    propagate_uncertainty, gradient_function_3
+)
+
+from utils import append_list_as_row
+
+def generate_perfect_helix(num_points, pitch, radius):
+    t = np.linspace(0, 4 * np.pi, num_points)
+    x = radius * np.cos(t)
+    y = radius * np.sin(t)
+    z = (pitch / (2 * np.pi)) * t
+    return np.vstack((x, y, z)).T
+
+def generate_noisy_helix(num_points, pitch, radius, noise_level=0):
+    t = np.linspace(0, 4 * np.pi, num_points)
+    x = radius * np.cos(t) + np.random.normal(0, noise_level, num_points)
+    y = radius * np.sin(t) + np.random.normal(0, noise_level, num_points)
+    z = (pitch / (2 * np.pi)) * t + np.random.normal(0, noise_level, num_points)
+    return np.vstack((x, y, z)).T
 
 def find_arguments():
 
@@ -25,7 +55,7 @@ def find_arguments():
     pdb_id = args.PDB_ID
     filename = args.Filename
     filename_out, file_extension = os.path.splitext(str(os.getcwd()) + "/" + filename)
-    if file_extension != ".ent":  # note this has been changed to ent for the RepeatsDB characterisation - make appropriate for .ent or .pdb
+    if file_extension != ".ent":  # note this has been changed to ent for the RepeatsDB characterisation
         filename = filename_out + ".ent"
     chain_ID = args.Chain
     starting_res = args.First_residue
@@ -53,6 +83,12 @@ def Main():
         PDB_coordinate_data, starting_res, ending_res, PDB_starting_point)
     # Find repeat unit centroids
     centroids, centroid_no = find_repeat_centroids(solenoid_Cas, rep_unit)
+    
+    # Fake perfect data
+    #centroid_no = 10
+    #pitch = 10
+    #radius = 5
+    #centroids = generate_noisy_helix(centroid_no, pitch, radius)
 
     # ----------------------------------------
     # main helix inital guesses - execution
@@ -81,9 +117,9 @@ def Main():
     # contraints
     cons = ({'type': 'eq', 'fun': constraint_1},
             {'type': 'eq', 'fun': constraint_2})
-
+    
     bestFitValues = minimize(cost_function, estimate, args=(
-        centroids), constraints=cons, method='trust-constr')
+        centroids), constraints=cons) #method='trust-constr'
     inital_best_fit = np.array(bestFitValues.x)
     ax, ay, az, ox, oy, oz, r = inital_best_fit
 
@@ -144,23 +180,28 @@ def Main():
     estimates = [pitch_estimate, radius_estimate,
                  w_fit_updated[0], w_fit_updated[1], w_fit_updated[2],
                  vec_o_updated[0], vec_o_updated[1], vec_o_updated[2],
-                 first_data_point[0], first_data_point[1], first_data_point[2]]  # pretty sure the first data point is able to be reduced to just 1 not 3 |(rotational value)
+                 first_data_point[0], first_data_point[1], first_data_point[2]]
 
     helix_coordinates = helix_reconstruction(estimates, handedness, centroids)
 
     cons_2 = ({'type': 'eq', 'fun': constraint_1_new},
               {'type': 'eq', 'fun': constraint_2_new})
-
+    
     bestFitValues = minimize(cost_function_2, estimates, args=(
-        centroids, handedness), constraints=cons_2)
+        centroids, handedness), constraints=cons_2, method="SLSQP")
     best_fit = np.array(bestFitValues.x)
     best_fit_values, cylinder_array, handedness, pitch, radius, vector_a, vector_o, terminal_point = unpacking_variables(
         best_fit, handedness)
+    
+    best_fit = bestFitValues.x
+    fun = bestFitValues.fun
+    grad = lambda params: gradient_function(params, centroids, handedness)
+    uncertainties, cov = calculate_uncertainties_from_grad(grad, best_fit, fun, len(best_fit))
 
     print("")
     print("Superhelix parameters")
-    print("Pitch = {:.5f} Å".format(pitch))
-    print("Radius = {:.5f} Å".format(radius))
+    print(f"Pitch = {pitch:.5f} Å ± {uncertainties[0]:.5f}")
+    print(f"Radius = {radius:.5f} Å ± {uncertainties[1]:.5f}")
     print("Handedness = ", handedness)
     print("Direction vector = ", vector_a)
 
@@ -177,7 +218,7 @@ def Main():
     cylinder_rmsd = np.sqrt((cylinder_residual)/centroids.shape[1])
     print("cylinder RMSD:", cylinder_rmsd)
 
-    # translate 
+    # translate
     translated_axis, translated_centroids, translated_solenoid_Cas = translate_to_origin(
         linepts, centroids.T, solenoid_Cas, new_projected_first_point)
 
@@ -202,11 +243,19 @@ def Main():
 
     # rise per repeat
     rise_per_rep = rise_per_repeat(z_helix)
-    print("Rise = {:.5f} Å".format(rise_per_rep))
 
     # twist
-    twist = total_twist(xy_helix, handedness)
-    print("Twist = {:.5f} Å".format(twist))
+    twist = np.degrees(total_twist(xy_helix, handedness))
+    
+    # rise per repeat
+    rise_jac = numerical_jacobian(lambda x: rise_per_repeat(flatten_coordinates(helix_reconstruction(x, handedness, centroids))[1]), best_fit)
+    rise_uncertainty = propagate_uncertainty(cov, rise_jac)
+    print(f"Rise = {rise_per_rep:.5f} Å ± {rise_uncertainty:.5f}")
+
+    # twist
+    twist_jac = numerical_jacobian(lambda x: total_twist(flatten_coordinates(helix_reconstruction(x, handedness, centroids))[0], handedness), best_fit)
+    twist_uncertainty = propagate_uncertainty(cov, twist_jac)
+    print(f"Twist = {twist:.5f} degrees ± {twist_uncertainty:.5f} degrees")
     print("")
 
     # ----------------------------------------
@@ -246,12 +295,19 @@ def Main():
         local_handedness = "left"
     if omega > 0:
         local_handedness = "right"
+    
+    # Calculate uncertainties
+    grad = lambda params: gradient_function_3(params, Ca_residues, test_helix, t_arr, B, N)
+    uncertainties, cov = calculate_uncertainties_from_grad(grad, refined_est, bestFitValues.fun, len(refined_est))
+
+    omega_deg = omega
+    phase_deg = np.degrees(phase)
 
     print("")
     print("Local helix parameters")
-    print("Omega = {:.2f} what unit is this?".format(omega))
-    print("Alpha = {:.2f} Å".format(alpha))
-    print("Phase = {:.2f} radians".format(phase))
+    print(f"Omega = {omega_deg:.2f} radians ± {uncertainties[0]:.2f} radians")
+    print(f"Alpha = {alpha:.2f} Å ± {uncertainties[1]:.2f} Å")
+    print(f"Phase = {phase_deg:.2f} degrees ± {np.degrees(uncertainties[2]):.2f} degrees")
     print("Hand = ", local_handedness)
 
     local_helix_residual = cost_function_3(
@@ -272,6 +328,31 @@ def Main():
     # ----------------------------------------
     
     plot_helix(new_centroids, new_new_helix, Ca_residues, final_helix, new_Ca_coords)
+    
+    # Save data to CSV
+    header = ["Type", "Description", "PDB ID", "Chain", "First Residue", "Last Residue", "Repeat Residues", 
+              "Centroid Number", "Pitch (Å)", "Pitch Uncertainty (Å)", "Radius (Å)", "Radius Uncertainty (Å)", 
+              "Rise (Å)", "Rise Uncertainty (Å)", "Twist (degrees)", "Twist Uncertainty (degrees)", "Handedness", 
+              "Cylinder RMSD", "Helix RMSD", "Omega (radians)", "Omega Uncertainty (radians)", "Alpha (Å)", 
+              "Alpha Uncertainty (Å)", "Superhelix Handedness", "Superhelix RMSD"]
+
+    row_contents = ["Elongated", "beta solenoid", str(pdb_id), str(chain_ID), str(starting_res), str(ending_res), 
+                    str(rep_unit), str(centroid_no), f'{pitch:.3f}', f'{uncertainties[0]:.3f}', f'{radius:.3f}', 
+                    f'{uncertainties[1]:.3f}', f'{rise_per_rep:.3f}', f'{rise_uncertainty:.3f}', f'{twist:.3f}', 
+                    f'{twist_uncertainty:.3f}', str(handedness), f'{cylinder_rmsd:.3f}', f'{helix_rmsd:.3f}', 
+                    f'{omega_deg:.3f}', f'{uncertainties[0]:.3f}', f'{alpha:.3f}', f'{uncertainties[1]:.3f}', 
+                    str(local_handedness), f'{local_helix_rmsd:.3f}']
+    
+    file_name = 'solenoid_parameters_and_uncertainty_all.csv'
+    
+    # Check if file exists and write header if it doesn't
+    if not os.path.exists(file_name):
+        with open(file_name, 'a+', newline='') as write_obj:
+            csv_writer = writer(write_obj)
+            csv_writer.writerow(header)
+    
+    # Append the data row
+    append_list_as_row(file_name, row_contents)
 
 
 if __name__ == "__main__":
