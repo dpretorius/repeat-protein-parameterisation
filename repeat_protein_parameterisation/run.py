@@ -18,7 +18,7 @@ from secondaryhelix_fitting import (
 )
 from plotting import plot_helix
 
-from uncertaninty import (
+from uncertainty import (
     gradient_function, calculate_uncertainties_from_grad, numerical_jacobian,
     propagate_uncertainty, gradient_function_3
 )
