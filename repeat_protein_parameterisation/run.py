@@ -333,7 +333,7 @@ def Main():
     header = ["Type", "Description", "PDB ID", "Chain", "First Residue", "Last Residue", "Repeat Residues", 
               "Centroid Number", "Pitch (Å)", "Pitch Uncertainty (Å)", "Radius (Å)", "Radius Uncertainty (Å)", 
               "Rise (Å)", "Rise Uncertainty (Å)", "Twist (degrees)", "Twist Uncertainty (degrees)", "Handedness", 
-              "Cylinder RMSD", "Helix RMSD", "Omega (radians)", "Omega Uncertainty (radians)", "Alpha (Å)", 
+              "Cylinder RMSD", "Helix RMSD", "Omega", "Omega Uncertainty", "Alpha (Å)", 
               "Alpha Uncertainty (Å)", "Superhelix Handedness", "Superhelix RMSD"]
 
     row_contents = ["Elongated", "beta solenoid", str(pdb_id), str(chain_ID), str(starting_res), str(ending_res), 
