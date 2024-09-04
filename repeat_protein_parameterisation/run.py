@@ -330,20 +330,20 @@ def Main():
     plot_helix(new_centroids, new_new_helix, Ca_residues, final_helix, new_Ca_coords)
     
     # Save data to CSV
-    header = ["Type", "Description", "PDB ID", "Chain", "First Residue", "Last Residue", "Repeat Residues", 
+    header = ["PDB ID", "Chain", "First Residue", "Last Residue", "Repeat Residues", 
               "Centroid Number", "Pitch (Å)", "Pitch Uncertainty (Å)", "Radius (Å)", "Radius Uncertainty (Å)", 
               "Rise (Å)", "Rise Uncertainty (Å)", "Twist (degrees)", "Twist Uncertainty (degrees)", "Handedness", 
               "Cylinder RMSD", "Helix RMSD", "Omega", "Omega Uncertainty", "Alpha (Å)", 
               "Alpha Uncertainty (Å)", "Superhelix Handedness", "Superhelix RMSD"]
 
-    row_contents = ["Elongated", "beta solenoid", str(pdb_id), str(chain_ID), str(starting_res), str(ending_res), 
+    row_contents = [str(pdb_id), str(chain_ID), str(starting_res), str(ending_res), 
                     str(rep_unit), str(centroid_no), f'{pitch:.3f}', f'{uncertainties[0]:.3f}', f'{radius:.3f}', 
                     f'{uncertainties[1]:.3f}', f'{rise_per_rep:.3f}', f'{rise_uncertainty:.3f}', f'{twist:.3f}', 
                     f'{twist_uncertainty:.3f}', str(handedness), f'{cylinder_rmsd:.3f}', f'{helix_rmsd:.3f}', 
                     f'{omega_deg:.3f}', f'{uncertainties[0]:.3f}', f'{alpha:.3f}', f'{uncertainties[1]:.3f}', 
                     str(local_handedness), f'{local_helix_rmsd:.3f}']
     
-    file_name = 'solenoid_parameters_and_uncertainty_all.csv'
+    file_name = 'protein_parameters.csv'
     
     # Check if file exists and write header if it doesn't
     if not os.path.exists(file_name):
