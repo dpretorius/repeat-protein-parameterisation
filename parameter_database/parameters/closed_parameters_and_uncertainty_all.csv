@@ -1,4 +1,4 @@
-Type,Description,PDB ID,Chain,First Residue,Last Residue,Repeat Residues,Centroid Number,Pitch (Å),Pitch Uncertainty (Å),Radius (Å),Radius Uncertainty (Å),Rise (Å),Rise Uncertainty (Å),Twist (degrees),Twist Uncertainty (degrees),Handedness,Cylinder RMSD,Helix RMSD,Omega (radians),Omega Uncertainty (radians),Alpha (Å),Alpha Uncertainty (Å),Superhelix Handedness,Superhelix RMSD
+Type,Description,PDB ID,Chain,First Residue,Last Residue,Repeat Residues,Centroid Number,Pitch (Å),Pitch Uncertainty (Å),Radius (Å),Radius Uncertainty (Å),Rise (Å),Rise Uncertainty (Å),Twist (degrees),Twist Uncertainty (degrees),Handedness,Cylinder RMSD,Helix RMSD,Omega,Omega Uncertainty,Alpha (Å),Alpha Uncertainty (Å),Superhelix Handedness,Superhelix RMSD
 Closed,Closed,1bkh,A,139,321,25,7,6.265,0.145,12.974,1.521,0.764,0.304,43.909,0.002,left,0.506,0.941,0.052,0.145,7.240,1.521,right,3.725
 Closed,Closed,1bkh,B,139,321,25,7,0.947,0.149,13.702,1.721,0.114,0.224,43.163,0.010,right,0.436,0.910,-0.028,0.149,8.309,1.721,left,4.216
 Closed,Closed,1bkh,C,139,321,25,7,4.170,0.123,13.297,1.561,0.506,0.125,43.700,0.011,left,0.357,0.896,0.034,0.123,8.163,1.561,right,3.825
